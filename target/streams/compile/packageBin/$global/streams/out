@@ -1,0 +1,35 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\pf-session2-sudoku_2.12-0.1.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Display\display$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Display\display$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Model\Grid$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Model\Grid$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Grids\solveGrid$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Grids\solveGrid$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Grids\initGrid.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Grids\initGrid.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Model[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Model[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Grids\solveGrid.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Grids\solveGrid.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Main$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Display[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Display[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Grids\initGrid$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Grids\initGrid$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Model\Grid.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Model\Grid.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Display\display.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Display\display.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Model\Square$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Model\Square$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Grids[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Grids[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Model\Square.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes\Model\Square.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
