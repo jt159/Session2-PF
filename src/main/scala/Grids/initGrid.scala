@@ -17,6 +17,10 @@ object initGrid {
     6,0,0,5,8,0,7,0,0
   )
 
+  /**
+    *
+    * @return a new grid from the model
+    */
   def init: Grid = {
     val squares = gridSchema.foldLeft(List[Square]())((acc, line) => {
           var squareStatus = if (line != 0) 4 else 2

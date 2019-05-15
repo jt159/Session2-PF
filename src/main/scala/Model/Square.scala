@@ -14,6 +14,11 @@ case class Square (x: Int,
               status: Int,
               possibleValues: List[Int]) {
 
+  /**
+    *
+    * @param square a square to check
+    * @return true if the to square are at the same position false either
+    */
   def equals(square : Square): Boolean = square.x == x && square.y == y
 
 

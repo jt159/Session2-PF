@@ -6,6 +6,11 @@ import Model.Square
 
 object solveGrid {
 
+  /**
+    *
+    * @param grid the grid to solve
+    * @return a better solved grid
+    */
   def solve(grid : Grid): Grid = {
 
     val smallestSolutionsSquare = getSmallestSolutionTable(grid)
@@ -19,6 +24,11 @@ object solveGrid {
 
   }
 
+  /**
+    *
+    * @param grid the grid searching on
+    * @return the square that has the smallest length of possible solution table
+    */
   def getSmallestSolutionTable(grid : Grid): Square = {
     var minusSolutionsSquare = Square(0,0,0,0,List(1,2,3,4,5,6,7,8,9))
     grid.squares.foldLeft(List[Square]())((acc, square) => {
