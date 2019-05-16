@@ -19,7 +19,9 @@ case class Square (x: Int,
     * @param square a square to check
     * @return true if the to square are at the same position false either
     */
-  def equals(square : Square): Boolean = square.x == x && square.y == y
+  def equals(square : Square): Boolean = {
+    square.x == this.x && square.y == this.y
+  }
 
 
 }

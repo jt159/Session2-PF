@@ -14,7 +14,7 @@ case class Grid (squares: List[Square],
     * @param y the y value on the grid of the searched square
     * @return the searched square
     */
-  def getSquare( x:Int, y:Int): Square = {
+  def getSquare(x:Int, y:Int): Square = {
     squares.find(p => p.x == x && p.y == y).get
   }
 
@@ -29,7 +29,7 @@ case class Grid (squares: List[Square],
     def updateSqr(list: List[Square], square: Square, newValue: Int): List[Square] = {
       if (list.isEmpty) Nil
       else if (list.head.equals(square))
-        //update the changed square and put it's status at -2
+        //update the changed square and put it's status at 0
         list.head.copy(status = 0, value = newValue) :: updateSqr(list.tail, square, newValue)
       else list.head :: updateSqr(list.tail, square, newValue)
     }
@@ -46,17 +46,13 @@ case class Grid (squares: List[Square],
 
       if(square.status < 2) {
         // if status != 2 then it's a user answer square so process the verification
-        if(square.x == 6 && square.y == 0) {
-          println(checkLine(this, square))
-          println(checkColumn(this, square))
-          println(checkSquare(this, square))
-        }
+
         var resultStatus = 1
         if(checkLine(this, square) && checkColumn(this, square) && checkSquare(this, square)) {
           resultStatus = 3
         }
-        acc :+ new Square(Math.round(acc.length/9),
-          acc.length % 9,
+        acc :+ new Square(acc.length % 9 ,
+          Math.round(acc.length/9),
           square.value,
           resultStatus,
           square.possibleValues )
@@ -74,7 +70,7 @@ case class Grid (squares: List[Square],
     *
     * @param grid the grid to check
     * @param square the square to check if it's value is already on the line
-    * @return true if the no other square has the same value on the same line
+    * @return true if they is no other square has the same value on the same line
     */
   def checkLine(grid: Grid, square: Square): Boolean = {
     grid.squares.find(s => s.y == square.y &&  s.x != square.x && s.value == square.value)match {
@@ -87,7 +83,7 @@ case class Grid (squares: List[Square],
     *
     * @param grid the grid to check
     * @param square the square to check if it's value is already on the column
-    * @return true if the no other square has the same value on the same column
+    * @return true if they is no other square has the same value on the same column
     */
   def checkColumn(grid: Grid, square: Square): Boolean = {
     grid.squares.find(s => s.x == square.x && s.y != square.y && s.value == square.value)match {
@@ -100,7 +96,7 @@ case class Grid (squares: List[Square],
     *
     * @param grid the grid to check
     * @param square the square to check if it's value is already on the square zone of 9 squares
-    * @return true if the no other square has the same value on the same square zone of 9 squares
+    * @return true if they is no other square has the same value on the same square zone of 9 squares
     */
   def checkSquare(grid: Grid, square: Square): Boolean = {
     grid.squares.find(s => Math.round(s.x / 3) == Math.round(square.x / 3)
@@ -124,13 +120,7 @@ case class Grid (squares: List[Square],
         // if status < 3 then it's a user answer square or default empty value so process the array of possibilites fill up
         for(i <- 1 to 9) {
           val testSquare = Square(square.x, square.y, i,0,List())
-          if(testSquare.x == 6 && testSquare.y == 0) {
-            println("-----------------------------")
-            println(i)
-            println(checkLine(this, testSquare))
-            println(checkColumn(this, testSquare))
-            println(checkSquare(this, testSquare))
-          }
+
           if(checkLine(this, testSquare) && checkColumn(this, testSquare) && checkSquare(this, testSquare)) {
             possibleValues = i :: possibleValues
           }

@@ -1,4 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0mC:\Users\james\Desktop\untitled\PF-Session2-Sudoku\src\main\scala\Model\Grid.scala:2:14: imported `Square' is permanently hidden by definition of object Square in package Model[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\james\Desktop\Ratrapage IG5\PF\Session2-PF\src\main\scala\Model\Grid.scala:2:14: imported `Square' is permanently hidden by definition of object Square in package Model[0m
 [0m[[0m[33mwarn[0m] [0m[0mimport Model.Square[0m
 [0m[[0m[33mwarn[0m] [0m[0m             ^[0m
 [0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

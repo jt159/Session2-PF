@@ -12,23 +12,30 @@ object Main extends App {
 
   def play(grid: Grid): Grid =  {
     display.renderGrid(grid)
-    //If grid finish
-    //TODO display end
-    scala.io.StdIn.readLine("Follow ? (enter) ")
 
-    //else ask square changes
-    //val newGrid = display.askInputs(grid)
-    val newGrid = solveGrid.solve(grid)
+    if(grid.isCompleted()) {
+      //If grid is completed
+      display.endGame()
+      val newGameGrid = initGrid.init
+      play(grid)
 
-    display.renderGrid(newGrid)
-    //Process changes
-    val checkedGrid = newGrid.checkValues()
-    //Update possible values for each squares
-    val processedGrid = checkedGrid.filPossibleValueSquares()
+    } else {
+      //else ask square changes
+      //val newGrid = display.askInputs(grid)
+      val newGrid = solveGrid.solve(grid)
+
+      //Process changes
+      val checkedGrid = newGrid.checkValues()
+
+      //Update possible values for each squares
+      val processedGrid = checkedGrid.filPossibleValueSquares()
 
 
-    //loop new turn
-    play(processedGrid)
+      //loop new turn
+      play(processedGrid)
+    }
+
+
 
   }
 

@@ -2,32 +2,43 @@
 [0m[[0m[0mdebug[0m] [0m[0mInitial source changes: [0m
 [0m[[0m[0mdebug[0m] [0m[0m	removed:Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\src\main\scala\Model\Grid.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(C:\Users\james\Desktop\Ratrapage IG5\PF\Session2-PF\src\main\scala\Main.scala, C:\Users\james\Desktop\Ratrapage IG5\PF\Session2-PF\src\main\scala\Display\display.scala)[0m
 [0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Model.Grid)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(Main, Display.display)[0m
 [0m[[0m[0mdebug[0m] [0m[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Model.Grid)[0m
-[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\src\main\scala\Model\Grid.scala)[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 Scala source to C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(Main, Display.display)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(C:\Users\james\Desktop\Ratrapage IG5\PF\Session2-PF\src\main\scala\Main.scala, C:\Users\james\Desktop\Ratrapage IG5\PF\Session2-PF\src\main\scala\Display\display.scala)[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 2 Scala sources to C:\Users\james\Desktop\Ratrapage IG5\PF\Session2-PF\target\scala-2.12\classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.8[0m
 [0m[[0m[0mdebug[0m] [0m[0mGetting org.scala-sbt:compiler-bridge_2.12:1.2.5:compile for Scala 2.12.8[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler c083f3 for Scala compiler version 2.12.8[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler d15f8a for Scala compiler version 2.12.8[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	C:\Program Files (x86)\Java\jre1.8.0_181\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_181\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_181\classes;C:\Users\james\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.8.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\james\Desktop\untitled\PF-Session2-Sudoku\target\scala-2.12\classes[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 4.259547362 s[0m
+[0m[[0m[0mdebug[0m] [0m[0m	C:\Users\james\Desktop\Ratrapage IG5\PF\Session2-PF\target\scala-2.12\classes[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.85595124 s[0m
 [0m[[0m[0minfo[0m] [0m[0mDone compiling.[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from Display.display...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(Display.display)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(Display.display)[0m
+[0m[[0m[0mdebug[0m] [0m[0mThe following modified names cause invalidation of Main: Set(UsedName(endGame,[Default]))[0m
+[0m[[0m[0mdebug[0m] [0m[0mNone of the modified names appears in source file of Grids.solveGrid. This dependency is not being considered for invalidation.[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(Display.display,ModifiedNames(changes = UsedName(endGame,[Default]))) invalidates 2 classes due to The Display.display has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(endGame,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by transitive inheritance: Set(Display.display)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	> [0m
+[0m[[0m[0mdebug[0m] [0m[0m	> by member reference: Set(Main)[0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
 [0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set(Main)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Set(Main)[0m
 [0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
 [0m[[0m[0mdebug[0m] [0m[0mAll newly invalidated classes after taking into account (previously) recompiled classes:Set()[0m
