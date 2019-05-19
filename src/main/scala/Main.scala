@@ -15,6 +15,7 @@ object Main extends App {
     val grid = initGrid.init(difficultyValue)
 
     play(grid,0)
+
   }
 
 
@@ -23,9 +24,9 @@ object Main extends App {
       //If grid is completed
       display.renderGrid(grid)
       display.endGame()
-      grid
+      newGame()
     }else {
-      if(oldTypeTurn<3) display.renderGrid(grid)
+      if(oldTypeTurn<4) display.renderGrid(grid)
 
       var typeTurnValue = 0
       if(oldTypeTurn<3){

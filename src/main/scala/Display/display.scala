@@ -21,9 +21,9 @@ object display {
     println("- 2 (medium)")
     println("- 3 (hard)")
     println("###############################")
-    val value = scala.io.StdIn.readLine("Your choice : ").toInt
-    if (value == 1 || value == 2 || value == 3) {
-      value
+    val value = scala.io.StdIn.readLine("Your choice : ")
+    if (value != null && (value.toInt == 1 || value.toInt == 2 || value.toInt == 3)) {
+      value.toInt
     }else{
       print("\u001B[31m" + "Wrong choice ! Try again ! " + "\u001B[0m")
       renderMenu()
@@ -38,9 +38,9 @@ object display {
     println("- 2 (let the AI play 1 turn)")
     println("- 3 (let the AI resolve all the grid)")
     println("###############################")
-    val value = scala.io.StdIn.readLine("Your choice : ").toInt
-    if (value == 1 || value == 2 || value == 3) {
-      value
+    val value = scala.io.StdIn.readLine("Your choice : ")
+    if (value != null && (value.toInt == 1 || value.toInt == 2 || value.toInt == 3)) {
+      value.toInt
     }else{
       print("\u001B[31m" + "Wrong choice ! Try again ! " + "\u001B[0m")
       renderPlayingMenu()
