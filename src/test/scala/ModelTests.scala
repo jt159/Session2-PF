@@ -8,22 +8,22 @@ class ModelTests extends WordSpec {
   "A Grid" when {
     "when created" should {
       "Should return a non empty square List" in {
-        val grid = initGrid.init
+        val grid = initGrid.init(1)
         assert(grid.squares.nonEmpty)
       }
       "Should have a 81 length square list" in {
-        val grid = initGrid.init
+        val grid = initGrid.init(2)
         assert(grid.squares.length == 81)
       }
       "Should be unvalid" in {
-        val grid = initGrid.init
+        val grid = initGrid.init(3)
         assert(!grid.isValid)
       }
     }
 
     "when searching a square" should {
       "Should return a unique square when the right x and y value" in {
-        val grid = initGrid.init
+        val grid = initGrid.init(1)
         val square = grid.getSquare(1,2)
         assert(square.x == 1 && square.y == 2)
       }
@@ -31,7 +31,7 @@ class ModelTests extends WordSpec {
 
     "when updating a square" should {
       "Should return a unique square when the right x and y and the new value" in {
-        val grid = initGrid.init
+        val grid = initGrid.init(2)
         val square = grid.getSquare(1,2)
         val oldValue = square.value
         val updatedGrid = Grid(grid.updateSquare(square, oldValue-1),grid.isValid)

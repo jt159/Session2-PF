@@ -5,24 +5,42 @@ import Display.display
 import Grids.solveGrid
 
 object Main extends App {
-  val grid = initGrid.init
   display.renderStartScreen
+  newGame()
 
-  play(grid)
 
-  def play(grid: Grid): Grid =  {
-    display.renderGrid(grid)
 
+  def newGame() = {
+    val difficultyValue = display.renderMenu()
+    val grid = initGrid.init(difficultyValue)
+
+    play(grid,0)
+  }
+
+
+  def play(grid: Grid,oldTypeTurn:Int): Grid =  {
     if(grid.isCompleted()) {
       //If grid is completed
+      display.renderGrid(grid)
       display.endGame()
-      val newGameGrid = initGrid.init
-      play(grid)
+      grid
+    }else {
+      if(oldTypeTurn<3) display.renderGrid(grid)
 
-    } else {
+      var typeTurnValue = 0
+      if(oldTypeTurn<3){
+        typeTurnValue = display.renderPlayingMenu()
+      } else {
+        typeTurnValue = oldTypeTurn
+      }
+
       //else ask square changes
-      //val newGrid = display.askInputs(grid)
-      val newGrid = solveGrid.solve(grid)
+      var newGrid: Grid = null;
+      if(typeTurnValue > 1) {
+        newGrid = solveGrid.solve(grid)
+      } else {
+        newGrid = display.askInputs(grid)
+      }
 
       //Process changes
       val checkedGrid = newGrid.checkValues()
@@ -30,9 +48,8 @@ object Main extends App {
       //Update possible values for each squares
       val processedGrid = checkedGrid.filPossibleValueSquares()
 
-
       //loop new turn
-      play(processedGrid)
+      play(processedGrid, typeTurnValue)
     }
 
 
@@ -40,3 +57,4 @@ object Main extends App {
   }
 
 }
+
